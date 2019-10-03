@@ -81,6 +81,11 @@ namespace linqExercises
             };
             toys.Add("Bicycle", 321);
             Console.WriteLine($"we have a number of toys of {toys.Count}");
+
+            foreach(KeyValuePair<string, int> toy in toys)
+            {
+                Console.WriteLine($"We sold {toy.Value} units of {toy.Key}");
+            }
         }
     }
 }
