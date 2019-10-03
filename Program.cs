@@ -43,9 +43,25 @@ namespace linqExercises
                 "Imac",
                 "Iwatch"
             };
+            //for each loop is used to iterate over a collection
             foreach (string Product in Products){
                 Console.WriteLine(Product);
             }
+
+              List<string> RandomStuff = new List<string>(){
+                "Sofa",
+                "Cake",
+                "Mirror",
+                "random",
+                "Iphone",
+                "Imac",
+                "Iwatch"
+            };
+            //for loop can be used to and to get the equavalent the foreach above
+            for (int i=0; i<RandomStuff.Count; i++){
+                Console.WriteLine(RandomStuff[i]);
+            }
+
         }
     }
 }
