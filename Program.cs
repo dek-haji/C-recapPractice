@@ -86,6 +86,15 @@ namespace linqExercises
             {
                 Console.WriteLine($"We sold {toy.Value} units of {toy.Key}");
             }
+            Dictionary<string, string> wordsAndDefinitions = new Dictionary<string, string>();
+            wordsAndDefinitions.Add("Awesome", "The feeling of students when they are learning C#");
+            wordsAndDefinitions.Add("Good", "The feeling of students when they watching spaceX documentry");
+            wordsAndDefinitions.Add("Amazing", "The feeling of students when they enjoying coding");
+
+            foreach(KeyValuePair<string, string> word in wordsAndDefinitions)
+            {
+                Console.WriteLine($"the definition is {word.Value} means {word.Key}");
+            }
         }
     }
 }
