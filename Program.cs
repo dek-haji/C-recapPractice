@@ -117,6 +117,12 @@ namespace linqExercises
             {
                 Console.WriteLine($"{c}");
             }
+        // using aggregation method
+        // there is build in methods that we can use to get what we looking
+        Console.WriteLine($"Largest number is {cohortStudentCount.Max()}");
+        Console.WriteLine($"the sum of the number is {cohortStudentCount.Sum()}");
+        Console.WriteLine($"the minimum number is {cohortStudentCount.Min()}");
+
 
         }
     }
