@@ -123,7 +123,12 @@ namespace linqExercises
         Console.WriteLine($"the sum of the number is {cohortStudentCount.Sum()}");
         Console.WriteLine($"the minimum number is {cohortStudentCount.Min()}");
 
-
+        // Linq and lambdas
+        List<int> nums = new List<int>(){9, -59, 23, 71, -74, 13, 52, 44, 2};
+        var smallPositiveNumbers = nums.Where(n => n < 40 && n > 0).OrderBy(n => n);
+        foreach (int d in smallPositiveNumbers){
+        Console.WriteLine($" using lambdas {d}");
+        }
         }
     }
 }
