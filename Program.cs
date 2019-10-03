@@ -1,11 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace linqExercises
 {
     class Program
     {
-         static void Main(string[] args)
+        static void Main(string[] args)
         {
             // DateTime is the type of the purchaseData variable.
             // DateTime purchaseDate=DateTime.Now;
@@ -63,12 +64,18 @@ namespace linqExercises
             // }
 
             //now lets use conditions in c#
-            foreach( string product in Products){
-                if(product.Length < 5){
+            foreach (string product in Products)
+            {
+                if (product.Length < 5)
+                {
                     Console.WriteLine($"{product} has a short names");
-                }else if(product.Length < 10){
+                }
+                else if (product.Length < 10)
+                {
                     Console.WriteLine($"{product} has a medium-sized names");
-                }else {
+                }
+                else
+                {
                     Console.WriteLine($"{product} has a long names");
                 }
             }
@@ -82,7 +89,7 @@ namespace linqExercises
             toys.Add("Bicycle", 321);
             Console.WriteLine($"we have a number of toys of {toys.Count}");
 
-            foreach(KeyValuePair<string, int> toy in toys)
+            foreach (KeyValuePair<string, int> toy in toys)
             {
                 Console.WriteLine($"We sold {toy.Value} units of {toy.Key}");
             }
@@ -91,10 +98,26 @@ namespace linqExercises
             wordsAndDefinitions.Add("Good", "The feeling of students when they watching spaceX documentry");
             wordsAndDefinitions.Add("Amazing", "The feeling of students when they enjoying coding");
 
-            foreach(KeyValuePair<string, string> word in wordsAndDefinitions)
+            foreach (KeyValuePair<string, string> word in wordsAndDefinitions)
             {
                 Console.WriteLine($"the definition is {word.Value} means {word.Key}");
             }
+
+            //using LinQ
+            // Language-Integrated Query is used to filter 
+            List<int> cohortStudentCount = new List<int>()
+        {
+            25, 12, 28, 22, 11, 25, 27, 24, 19
+        };
+        IEnumerable<int> idealSize = from count in cohortStudentCount
+            where count < 27 && count > 19
+            orderby count ascending
+            select count;
+            foreach (int c in idealSize)
+            {
+                Console.WriteLine($"{c}");
+            }
+
         }
     }
 }
