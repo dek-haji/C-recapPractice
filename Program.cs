@@ -129,6 +129,14 @@ namespace linqExercises
         foreach (int d in smallPositiveNumbers){
         Console.WriteLine($" using lambdas {d}");
         }
+        //lets check if every item in the collection passes a condition
+        List<int> sampleNumbers = new List<int> {18, 9, 5, 6, 84, 2, 5, 13};
+        IEnumerable<int> onlyEvens = sampleNumbers.Where(number => number % 2 == 0);
+       foreach (int even in onlyEvens)
+       {
+            Console.WriteLine($"the even numbers are {even}");
+       }
+       
         }
     }
 }
