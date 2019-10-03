@@ -72,7 +72,15 @@ namespace linqExercises
                     Console.WriteLine($"{product} has a long names");
                 }
             }
-
+            //Dictionary is like objects in C# lets see how it works
+            Dictionary<string, int> toys = new Dictionary<string, int>(){
+                {"Hot Wheels", 344},
+                {"Legos", 763},
+                {"Gaming Consoles", 551},
+                {"Board Games", 298}
+            };
+            toys.Add("Bicycle", 321);
+            Console.WriteLine($"we have a number of toys of {toys.Count}");
         }
     }
 }
