@@ -1,0 +1,11 @@
+C:\Users\Dek\workspace\c32\linqExercises\bin\Debug\netcoreapp2.2\linqExercises.deps.json
+C:\Users\Dek\workspace\c32\linqExercises\bin\Debug\netcoreapp2.2\linqExercises.runtimeconfig.json
+C:\Users\Dek\workspace\c32\linqExercises\bin\Debug\netcoreapp2.2\linqExercises.runtimeconfig.dev.json
+C:\Users\Dek\workspace\c32\linqExercises\bin\Debug\netcoreapp2.2\linqExercises.dll
+C:\Users\Dek\workspace\c32\linqExercises\bin\Debug\netcoreapp2.2\linqExercises.pdb
+C:\Users\Dek\workspace\c32\linqExercises\obj\Debug\netcoreapp2.2\linqExercises.csprojAssemblyReference.cache
+C:\Users\Dek\workspace\c32\linqExercises\obj\Debug\netcoreapp2.2\linqExercises.csproj.CoreCompileInputs.cache
+C:\Users\Dek\workspace\c32\linqExercises\obj\Debug\netcoreapp2.2\linqExercises.AssemblyInfoInputs.cache
+C:\Users\Dek\workspace\c32\linqExercises\obj\Debug\netcoreapp2.2\linqExercises.AssemblyInfo.cs
+C:\Users\Dek\workspace\c32\linqExercises\obj\Debug\netcoreapp2.2\linqExercises.dll
+C:\Users\Dek\workspace\c32\linqExercises\obj\Debug\netcoreapp2.2\linqExercises.pdb
